@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:id="@+id/gridHolder">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="85dp"
+            android:id="@+id/topgrid"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@android:color/black"
+            android:layout_below="@id/topgrid"
+            android:layout_marginTop="130dp"
+            android:id="@+id/bottomgrid"/>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/leftgrid"/>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="25dp"
+            android:background="@android:color/black"
+            android:id="@+id/rightgrid"/>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignEnd="@id/leftgrid"
+            android:layout_alignBottom="@id/topgrid"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="clickSquare"
+            android:id="@+id/topLeft">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:visibility="invisible"
+                android:id="@+id/topLeftImage"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignStart="@id/leftgrid"
+            android:layout_alignBottom="@id/topgrid"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="clickSquare"
+            android:id="@+id/topMiddle">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:visibility="invisible"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/topMiddleImage"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignStart="@id/rightgrid"
+            android:layout_alignBottom="@id/topgrid"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="clickSquare"
+            android:id="@+id/topRight">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                android:id="@+id/topRightImage"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@id/bottomgrid"
+            android:layout_alignEnd="@id/leftgrid"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="60dp"
+            android:onClick="clickSquare"
+            android:id="@+id/middleLeft">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                android:id="@+id/middleLeftImage"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@id/bottomgrid"
+            android:layout_alignStart="@id/leftgrid"
+            android:layout_marginStart="65dp"
+            android:layout_marginBottom="60dp"
+            android:onClick="clickSquare"
+            android:id="@+id/middleMiddle">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                android:id="@+id/middleMiddleImage"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@id/bottomgrid"
+            android:layout_alignStart="@id/rightgrid"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="60dp"
+            android:onClick="clickSquare"
+            android:id="@+id/middleRight">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:visibility="invisible"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/middleRightImage"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/bottomgrid"
+            android:layout_alignEnd="@id/leftgrid"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="50dp"
+            android:onClick="clickSquare"
+            android:id="@+id/bottomLeft">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+
+                android:id="@+id/bottomLeftImage"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/bottomgrid"
+            android:layout_alignStart="@id/leftgrid"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="50dp"
+            android:onClick="clickSquare"
+            android:id="@+id/bottomMiddle">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+
+                android:id="@+id/bottomMiddleImage"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/bottomgrid"
+            android:layout_alignStart="@id/rightgrid"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:onClick="clickSquare"
+            android:id="@+id/bottomRight">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:visibility="invisible"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/bottomRightImage"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/gridHolder">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/restartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="resetGame"
+                android:text="Reset"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/victory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
